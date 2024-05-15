@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2024-05-13T19:34:38.940Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.2.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="Rw7tpRxgia7xkpCUVwTt" version="24.2.5" type="device">
+<mxfile host="Electron" modified="2024-05-11T10:17:06.024Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.2.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="5rT4qomaHUh92FF605PM" version="24.2.5" type="device">
   <diagram name="Página-1" id="89PYwJMeNdgQYh8Uygrn">
-    <mxGraphModel dx="1877" dy="621" grid="0" gridSize="10" guides="0" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2536" dy="991" grid="0" gridSize="10" guides="0" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1116,7 +1116,7 @@
         <mxCell id="8vJxBe0D8z6IA1CcfQK8-985" value="" style="rounded=1;whiteSpace=wrap;html=1;arcSize=45;fillColor=#DDEBFF;strokeColor=#6c8ebf;fillStyle=auto;opacity=30;" parent="8vJxBe0D8z6IA1CcfQK8-795" vertex="1">
           <mxGeometry x="3" y="120" width="50" height="43" as="geometry" />
         </mxCell>
-        <mxCell id="8vJxBe0D8z6IA1CcfQK8-1068" value="Nombre Persona" style="text;html=1;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=15;" parent="8vJxBe0D8z6IA1CcfQK8-795" vertex="1">
+        <mxCell id="8vJxBe0D8z6IA1CcfQK8-1068" value="Alejandro Rubio Rico" style="text;html=1;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=15;" parent="8vJxBe0D8z6IA1CcfQK8-795" vertex="1">
           <mxGeometry x="353" y="120" width="389" height="30" as="geometry" />
         </mxCell>
         <mxCell id="8vJxBe0D8z6IA1CcfQK8-1069" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#232F3E;fillColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.user;" parent="8vJxBe0D8z6IA1CcfQK8-795" vertex="1">

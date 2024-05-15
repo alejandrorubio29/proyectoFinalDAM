@@ -1,4 +1,5 @@
--- BASE DE DATOS PARA APLICACIÓN DE SEGUIMIENTO DE TAREAS -- 
+-- BASE DE DATOS PARA APLICACIÓN DE SEGUIMIENTO DE TAREAS --
+-- Autor: Alejandro Rubio Rico -- 
 
 DROP DATABASE IF EXISTS TAREAS;
 
@@ -30,7 +31,8 @@ CREATE TABLE Tarea (
     Fecha DATE,
     Horas_Previstas INT,
     Horas_Ejecutadas INT,
-    Reunión BOOLEAN,
+    Reunion BOOLEAN,
+    Completada BOOLEAN,
     ID_Usuario INT,
     ID_Tangible INT,
     FOREIGN KEY (ID_Usuario) REFERENCES Usuario(ID_Usuario)
