@@ -8,7 +8,7 @@ class LoginScreen extends StatelessWidget {
   final _passwordController = TextEditingController();
 
   // Instancia controlador de usuario
-  final _controllerUsuario = controllerUsuario();
+  final _controllerUsuario = ControllerUsuario();
 
   // Boton "he olvidado mi contraseña"
 

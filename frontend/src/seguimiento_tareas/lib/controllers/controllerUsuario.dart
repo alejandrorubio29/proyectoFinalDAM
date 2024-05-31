@@ -1,6 +1,11 @@
-import 'package:seguimiento_tareas/models/usuario.dart';
+// ignore_for_file: avoid_print, unused_local_variable
 
-class controllerUsuario {
+import 'dart:convert';
+
+import 'package:seguimiento_tareas/models/usuario.dart';
+import 'package:http/http.dart' as http;
+
+class ControllerUsuario {
   Usuario? usuarioActual;
 
   // Verificacion credenciales usuario
@@ -15,8 +20,8 @@ class controllerUsuario {
     );
 
     if (response.statusCode == 200) {
-      // Aquí deberías obtener el rol del usuario del backend y asignarlo a usuarioActual
-      usuarioActual = Usuario(nombre: username, rol: 'normal'); // TODO: reemplazar 'normal' con el rol real
+      
+      usuarioActual = Usuario(nombre: username, rol: 'normal'); 
       return true;
     } else {
       return false;
@@ -24,7 +29,7 @@ class controllerUsuario {
 
     /////// Prueba manual usuarios ///////
 
-    usuarioActual = Usuario(nombre: username, rol: 'areaCoordinator');
+    usuarioActual = Usuario(nombre: 'Laura', rol: 'coordinadorArea');
 
     return true; //TODO
   }
@@ -38,5 +43,24 @@ class controllerUsuario {
 
   String? getUsername() {
     return usuarioActual?.nombre;
+  }
+
+// Obtención de proyectos asignados al usuario
+  Future<void> fetchUserProjects(int userId) async {
+    try {
+      final response = await http.get(
+        Uri.parse(
+            'http://backend/projects?userId=$userId'), // Endpoint para obtener proyectos asignados al usuario
+      );
+
+      if (response.statusCode == 200) {
+        final List<dynamic> projectsData = jsonDecode(response.body);
+        var proyectos = projectsData.map((project) => project['name']).toList();
+      } else {
+        print('Error al obtener proyectos del usuario');
+      }
+    } catch (e) {
+      print('Error al obtener proyectos del usuario: $e');
+    }
   }
 }

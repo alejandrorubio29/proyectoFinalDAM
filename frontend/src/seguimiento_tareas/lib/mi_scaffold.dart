@@ -10,7 +10,7 @@ class MiScaffold extends StatelessWidget {
   final Widget body;
   final String title;
   final Widget? appBarLeading;
-  final controllerUsuario
+  final ControllerUsuario
       userController; // Controlar pantallas que se le muestran segun el usuario
 
   MiScaffold(
@@ -21,9 +21,8 @@ class MiScaffold extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    String? role = userController.getRole(); // Obtengo el rol del usuario
-    String? username =
-        userController.getUsername(); // Obtengo el nombre del usuario
+    String? role = userController.getRole();
+    String? username = userController.getUsername();
     return Scaffold(
         appBar: AppBar(
           title: Row(
@@ -32,8 +31,7 @@ class MiScaffold extends StatelessWidget {
               appBarLeading ??
                   Container(), // Si appBarLeading es null, muestra un contenedor vacío
               Text(title), //Titulo página
-              Text(username ??
-                  'Usuario desconocido'), // Muestra el nombre del usuario
+              Text(username ?? 'Laura'), // Muestra el nombre del usuario
               Image.asset('assets/images/logo.jpg',
                   height: 70.0), // Logo de la empresa
             ],
